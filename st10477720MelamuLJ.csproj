@@ -1,0 +1,33 @@
+﻿   <Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="audio\welcome.wav" />
+    <None Remove="images\icons8-chatbot-100.png" />
+    <None Remove="images\icons8-chatbot-50.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="audio\welcome.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\icons8-chatbot-50.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="images\icons8-chatbot-100.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
