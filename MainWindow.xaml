@@ -24,10 +24,11 @@
                    HorizontalAlignment="Center"
                    Margin="0,22,0,480" />
 
-        <RichTextBox x:Name="txtChat"
-                 Foreground="Blue"    
+        <TextBox x:Name="txtChat"
+                 Foreground="Blue"
                  Margin="70,70,70,120"
-                 IsReadOnly="True"                
+                 IsReadOnly="True"
+                 TextWrapping="Wrap"
                  VerticalScrollBarVisibility="Auto"
                  HorizontalScrollBarVisibility="Auto"
                  FontSize="14" />
@@ -40,21 +41,22 @@
                  KeyDown="txtMessage_KeyDown"/>
 
         <Button Content="Send"
-                FontWeight="Bold"
-                Width="80"
-                Height="35"
-                Margin="0,0,60,70"
-                Background="Plum"
-                VerticalAlignment="Bottom"
-                HorizontalAlignment="Right"
-                Click="Button_Click" />
+                 Width="80"
+                 Height="35"
+                 Margin="0,0,60,70"
+                 Background="Plum"
+                 VerticalAlignment="Bottom"
+                 HorizontalAlignment="Right"
+                 Click="Button_Click" />
 
         <Button Content="Clear"
-                Background="AliceBlue"
                 Width="80"
-                Height="30"
-                Margin="600,480,0,0"
-                Click="btnClear_Click"/>    
+                Height="35"
+                Margin="0,0,60,25"
+                Background="AliceBlue"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Right"
+                Click="btnClear_Click"/>   
 
     </Grid>
 </Window>
