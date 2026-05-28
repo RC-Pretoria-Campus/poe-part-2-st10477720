@@ -50,7 +50,7 @@
            Foreground="Gray"
            FontSize="18"
            HorizontalAlignment="Center"
-           Margin="0,160,0,0"/>
+           Margin="0,20,0,0"/>
         
         <!-- click continue prompt -->
         <TextBlock x:Name="clickPrompt"
